@@ -1,7 +1,7 @@
 import requests
 
 SHEETY_PRICES_ENDPOINT = "YOUR SHEETY PRICES URL"
-SHEETY_USERS_ENDPOINT="YOUR SHEETY USERS URL"
+
 
 class DataManager:
 
@@ -36,9 +36,4 @@ class DataManager:
             
             
             
-    def get_customer_emails(self):
-        customers_endpoint = SHEETY_USERS_ENDPOINT
-        response = requests.get(url=customers_endpoint)
-        data = response.json()
-        self.customer_data = data["users"]
-        return self.customer_data
+   
