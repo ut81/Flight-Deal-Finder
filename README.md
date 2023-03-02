@@ -1,5 +1,7 @@
 # Flight-Deal-Finder
 
+This program is going to find flight deals at lower price and send an alert email to the user.
+
 # APIs Required
 
 1. Google Sheet Data Management - https://sheety.co/
@@ -24,4 +26,7 @@ Also, enable the POST method in the users endpoint:
 
 
 7. Copy the sheety price endpoint and paste it into data_manager.py
-8. Register with the Kiwi Partners Flight Search API
+8. Register with the Kiwi Partners Flight Search API and get your API KEY.
+9. paste API KEY into flight_search.py
+10. Enter your name and password in notification_manager.py
+11. Now finally , run main.py 
