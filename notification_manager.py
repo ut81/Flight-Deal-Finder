@@ -5,11 +5,11 @@ passs="YOUR PASSWORD"
 
 class NotificationManager:
     #This class is responsible for sending notifications with the deal flight details.
-    def send_emails(self,emails,message,google_flight_link):
+    def send_emails(self,message,google_flight_link):
         
         with smtplib.SMTP("smtp.gmail.com") as connection:
             connection.starttls()
             connection.login(my_email,passs)
-            for email in emails:
-                connection.sendmail(from_addr=my_email,to_addrs=email,msg=f"Subject:New Low Price Flight!\n\n{message}\n{google_flight_link}".encode('utf-8'))
+            
+            connection.sendmail(from_addr=my_email,to_addrs=my_email,msg=f"Subject:New Low Price Flight!\n\n{message}\n{google_flight_link}".encode('utf-8'))
             
