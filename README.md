@@ -29,4 +29,5 @@ Click on "New Project" and create a new project in Sheety with the name "Flight 
 ![image](https://user-images.githubusercontent.com/126648429/222387757-73db374c-f8b2-4496-91eb-9244de36d4d1.png)
 
 6. Now, add First Name,Last Name and Email in User sheet.
-7. 
+7. Copy the sheety price endpoint , and user endpoint and paste it into data_manager.py
+8. Register with the Kiwi Partners Flight Search API
